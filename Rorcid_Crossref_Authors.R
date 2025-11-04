@@ -174,8 +174,6 @@ my_query <- glue('ringgold-org-id:', ringgold_id,
 # keep in mind that ROR ID and organization name are strings and need double quotes inside the 
 # single quotes used here for concatenation
 # replace these  example lines from Temple University carefully with ones you are interested in 
-my_query <- glue('ringgold-org-id:', '6558', 
-                 ' OR ringgold-org-id:', '43297',
 # and uncomment the below when you're done.
 # my_query <- glue('ringgold-org-id:', '6558', 
 #                 ' OR ringgold-org-id:', '43297',
