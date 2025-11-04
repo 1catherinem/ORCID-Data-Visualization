@@ -176,18 +176,21 @@ my_query <- glue('ringgold-org-id:', ringgold_id,
 # replace these  example lines from Temple University carefully with ones you are interested in 
 my_query <- glue('ringgold-org-id:', '6558', 
                  ' OR ringgold-org-id:', '43297',
-                 ' OR ringgold-org-id:', '83908',
-                 ' OR grid-org-id:', 'grid.264727.2', 
-                 ' OR grid-org-id:', 'grid.469246.b', 
-                 ' OR grid-org-id:', 'grid.460938.0', 
-                 ' OR ror-org-id:"', 'https://ror.org/00kx1jb78', 
-                 '" OR ror-org-id:"', 'https://ror.org/04zzmzt85',
-                 '" OR ror-org-id:"', 'https://ror.org/03savr706', 
-                 '" OR email:*', '@temple.edu', 
-                 ' OR email:*', '@tuj.temple.edu', 
-                 ' OR affiliation-org-name:"', 'Temple University',
-                 '" OR affiliation-org-name:"', 'Temple Ambler',
-                 '" OR affiliation-org-name:"', 'Temple Japan', '"')
+# and uncomment the below when you're done.
+# my_query <- glue('ringgold-org-id:', '6558', 
+#                 ' OR ringgold-org-id:', '43297',
+#                 ' OR ringgold-org-id:', '83908',
+#                 ' OR grid-org-id:', 'grid.264727.2', 
+#                 ' OR grid-org-id:', 'grid.469246.b', 
+#                 ' OR grid-org-id:', 'grid.460938.0', 
+#                 ' OR ror-org-id:"', 'https://ror.org/00kx1jb78', 
+#                '" OR ror-org-id:"', 'https://ror.org/04zzmzt85',
+#                '" OR ror-org-id:"', 'https://ror.org/03savr706', 
+#                '" OR email:*', '@temple.edu', 
+#                 ' OR email:*', '@tuj.temple.edu', 
+#                 ' OR affiliation-org-name:"', 'Temple University',
+#                '" OR affiliation-org-name:"', 'Temple Ambler',
+#                '" OR affiliation-org-name:"', 'Temple Japan', '"')
 
 # get the counts
 ##### TIME: this may hang a bit if institution has many ORCID ID holders(e.g. for Temple University's data [~3500 IDs], this took a few seconds)
